@@ -11,19 +11,18 @@
   ],
   "browser": {
     "buffer": false,
-    "safe-buffer": false,
-    "./src/request/index.js": "./src/request/browser.js"
+    "safe-buffer": false
   },
   "scripts": {
     "lint": "standard",
     "test-server-open": "PORT=7357 node test/support/server.js & echo $! > server.pid",
     "test-server-close": "if [ -f server.pid ]; then kill -9 $(cat server.pid); rm server.pid; fi",
     "test-browser": "PORT=7357 karma start --single-run",
-    "test-node": "PORT=7357 mocha -R spec --bail --require test/support/globals.js",
+    "test-node": "PORT=7357 mocha -R spec --bail",
     "test": "npm run lint && npm run test-server-open && npm run test-node && npm run test-browser; npm run test-server-close"
   },
   "engines": {
-    "node": ">=4.2.0"
+    "node": ">=18.0.0"
   },
   "repository": {
     "type": "git",
@@ -59,11 +58,9 @@
     "karma-mocha": "^2.0.1",
     "mocha": "^8.1.0",
     "object-assign": "^4.1.1",
-    "standard": "^14.3.3",
+    "standard": "^17.1.0",
     "watchify": "^3.11.1"
   },
   "dependencies": {
-    "popsicle": "^12.0.5",
-    "safe-buffer": "^5.2.0"
   }
 }
