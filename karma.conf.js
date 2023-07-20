@@ -1,5 +1,3 @@
-const isTravis = require('is-travis')
-
 /**
  * Initialize Karma with config information.
  *
@@ -112,7 +110,7 @@ module.exports = function (config) {
      *
      * @type {Array}
      */
-    browsers: isTravis ? ['ChromeHeadless', 'Firefox'] : ['Chrome', 'Firefox'],
+    browsers: process.env.CI ? ['ChromeHeadless', 'Firefox'] : ['Chrome', 'Firefox'],
 
     /**
      * If a browser does not capture within a given timeout, kill it.
