@@ -110,7 +110,7 @@ module.exports = function (config) {
      *
      * @type {Array}
      */
-    browsers: process.env.CI ? ['ChromeHeadless', 'Firefox'] : ['Chrome', 'Firefox'],
+    browsers: process.env.CI ? ['ChromeHeadless'] : ['Chrome', 'Firefox'],
 
     /**
      * If a browser does not capture within a given timeout, kill it.
