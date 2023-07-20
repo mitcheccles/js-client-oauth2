@@ -6,6 +6,23 @@
 
 > Straight-forward execution of OAuth 2.0 flows and authenticated API requests. 7.58 kB in browsers, after minification and gzipping, 75% from `url` and `querystring` dependencies.
 
+## FORK OF client-oauth2
+
+This is fork of [mulesoft-labs/js-client-oauth2](https://github.com/mulesoft-labs/js-client-oauth2).
+
+Difference:
+
+- Use Fetch API
+- No dependencies
+  - Drop to use safe-buffer and popsicle
+- Require Node.js 18+
+  - use native Fetch API
+
+No Change:
+
+- API
+- Browser and Node.js support
+
 ## Installation
 
 ```sh
