@@ -1,5 +1,5 @@
 {
-  "name": "client-oauth2",
+  "name": "@azu/client-oauth2",
   "version": "5.0.0",
   "description": "Straight-forward execution of OAuth 2.0 flows and authenticated API requests",
   "main": "src/client-oauth2.js",
