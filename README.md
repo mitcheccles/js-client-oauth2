@@ -8,7 +8,7 @@
 
 ## FORK OF client-oauth2
 
-This is fork of [mulesoft-labs/js-client-oauth2](https://github.com/mulesoft-labs/js-client-oauth2).
+This is fork of [@azu/client-oauth2](https://github.com/azu/js-client-oauth2).
 
 Difference:
 
