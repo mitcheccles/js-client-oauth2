@@ -23,17 +23,17 @@ No Change:
 - API
 - Browser and Node.js support
 
-Migration: Just replace `client-oauth2` to `@azu/client-oauth2`
+Migration: Just replace `client-oauth2` to `@mitcheccles/client-oauth2`
 
 ```diff
 - const ClientOAuth2 = require('client-oauth2')
-+ const ClientOAuth2 = require('@azu/client-oauth2')
++ const ClientOAuth2 = require('@mitcheccles/client-oauth2')
 ```
 
 ## Installation
 
 ```sh
-npm install @azu/client-oauth2 --save
+npm install @mitcheccles/client-oauth2 --save
 ```
 
 ## Usage
